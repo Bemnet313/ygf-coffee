@@ -44,7 +44,7 @@ const Navbar = () => {
                         <Link href="/" className="flex flex-row items-center gap-3 cursor-pointer group">
                             <div className="relative w-10 h-10 md:w-11 md:h-11 overflow-hidden rounded-full border border-primary/20 shadow-sm group-hover:border-primary/50 transition-colors bg-white">
                                 <Image
-                                    src="/icon.png"
+                                    src="/logo-nav.jpeg"
                                     alt="YGF Coffee Icon"
                                     fill
                                     className="object-cover p-1"
