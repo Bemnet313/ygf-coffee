@@ -19,12 +19,14 @@ export default function AboutSection() {
                     <h3 className="text-3xl md:text-5xl font-light tracking-[0.1em] text-[#1A1A1A] leading-tight mb-8">
                         <span className="text-[#2D6A4F] font-[family:var(--font-vintage)] italic tracking-widest">{t('ABOUT_HERITAGE')}</span> &<br />{t('ABOUT_EXCELLENCE')}
                     </h3>
-                    <p className="text-[#4A4A4A] text-lg font-light leading-loose mb-6 tracking-wide">
-                        {t('ABOUT_P1')}
-                    </p>
-                    <p className="text-[#4A4A4A] text-lg font-light leading-loose tracking-wide">
-                        {t('ABOUT_P2')}
-                    </p>
+                    <p 
+                        className="text-[#4A4A4A] text-lg font-light leading-loose mb-6 tracking-wide"
+                        dangerouslySetInnerHTML={{ __html: t('ABOUT_P1') }}
+                    />
+                    <p 
+                        className="text-[#4A4A4A] text-lg font-light leading-loose tracking-wide"
+                        dangerouslySetInnerHTML={{ __html: t('ABOUT_P2') }}
+                    />
                 </motion.div>
 
                 <motion.div

@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '@/context/LanguageContext';
 
@@ -92,7 +93,22 @@ export default function SourcingMapSection() {
 
     return (
         <section id="origins" className="relative w-full py-16 md:py-24 lg:py-32 bg-[#FAF8F4] border-t border-stone-200 overflow-hidden">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            {/* ── Background Image Layer ── */}
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src="/coffee-ceremony.jpg"
+                    alt="Coffee Ceremony Background"
+                    fill
+                    className="object-cover opacity-[0.15] grayscale mix-blend-multiply"
+                    priority
+                />
+                {/* Vignette & Gradient Overlays to blend the image seamlessly */}
+                <div className="absolute inset-0 bg-gradient-to-b from-[#FAF8F4] via-transparent to-[#FAF8F4] opacity-90" />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#FAF8F4] via-transparent to-[#FAF8F4] opacity-80" />
+            </div>
+
+            <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Section Header */}
                 <motion.div

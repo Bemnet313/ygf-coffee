@@ -32,7 +32,7 @@ const SustainabilitySection = () => {
 
     return (
         <section id="values" className="bg-[#FAF8F5] py-16 md:py-24 lg:py-32 relative border-t border-[#E5E0D8]">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-16 md:mb-24">
                     <motion.p
                         initial={{ opacity: 0, y: 10 }}
@@ -60,7 +60,25 @@ const SustainabilitySection = () => {
                     />
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+                <div className="relative">
+                    {/* The Connecting Flow Line (Visible mainly on lg screens) */}
+                    <div className="hidden lg:block absolute top-[52px] left-[12%] right-[12%] z-0 h-10 pointer-events-none">
+                        <svg width="100%" height="40" viewBox="0 0 1000 40" preserveAspectRatio="none" className="w-full h-full overflow-visible">
+                            <motion.path 
+                                d="M 0,20 C 150,20 200,40 333,40 C 466,40 500,0 666,0 C 833,0 850,20 1000,20" 
+                                fill="none" 
+                                stroke="#2D6A4F" 
+                                strokeWidth="1.5" 
+                                strokeDasharray="6 6"
+                                initial={{ pathLength: 0, opacity: 0 }}
+                                whileInView={{ pathLength: 1, opacity: 0.4 }}
+                                viewport={{ once: true, margin: "-100px" }}
+                                transition={{ duration: 2, ease: "easeInOut", delay: 0.5 }}
+                            />
+                        </svg>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 relative z-10">
                     {values.map((value, idx) => (
                         <motion.div
                             key={value.title}
@@ -77,6 +95,7 @@ const SustainabilitySection = () => {
                             <p className="text-[#6B6B6B] text-sm leading-loose tracking-wide">{value.description}</p>
                         </motion.div>
                     ))}
+                    </div>
                 </div>
             </div>
         </section>

@@ -11,7 +11,6 @@ const SourcingMapSection = dynamic(() => import('@/components/SourcingMapSection
 const CeremonySection = dynamic(() => import('@/components/CeremonySection'));
 const HeritageSection = dynamic(() => import('@/components/HeritageSection'));
 const SustainabilitySection = dynamic(() => import('@/components/SustainabilitySection'));
-const CoffeeBean3D = dynamic(() => import('@/components/CoffeeBean3D'));
 const ProductsSection = dynamic(() => import('@/components/ProductsSection'));
 
 const TestimonialsSection = dynamic(() => import('@/components/TestimonialsSection'));
@@ -32,7 +31,6 @@ export default function Home() {
       <HeritageSection />
       <LeadToast />
       <SustainabilitySection />
-      <CoffeeBean3D />
       <StatsSection />
       <ProductsSection />
       <TestimonialsSection />

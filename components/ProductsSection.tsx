@@ -60,7 +60,7 @@ export default function ProductsSection() {
             notes: 'Jasmine, Bergamot, Earl Grey',
             altitude: '1,900 – 2,200 MASL',
             price: '1,450 ETB / kg',
-            image: '/yirgacheffe.jpg',
+            image: '/ygf-bags-optimized.webp',
             heroImage: '/images/gallery/washing-station.jpg',
             scaScore: 90,
             processColor: '#3B82F6',
@@ -78,7 +78,7 @@ export default function ProductsSection() {
             notes: 'Blueberry, Dark Chocolate, Wine',
             altitude: '1,800 – 2,100 MASL',
             price: '1,380 ETB / kg',
-            image: '/images/beans.png',
+            image: '/ygf-bags-optimized.webp',
             heroImage: '/images/gallery/hand-sorting.png',
             scaScore: 87,
             processColor: '#D97706',
@@ -96,7 +96,7 @@ export default function ProductsSection() {
             notes: 'Peach, Honey, Vanilla',
             altitude: '2,000 – 2,300 MASL',
             price: '1,500 ETB / kg',
-            image: '/guji.jpg',
+            image: '/ygf-bags-optimized.webp',
             heroImage: '/images/gallery/highland-mist.png',
             scaScore: 91,
             processColor: '#F59E0B',
@@ -114,8 +114,8 @@ export default function ProductsSection() {
             notes: 'Blackberry, Cacao, Spice',
             altitude: '1,500 – 2,100 MASL',
             price: '1,350 ETB / kg',
-            image: '/harrar.jpg',
-            heroImage: '/images/gallery/cupping.jpg',
+            image: '/ygf-bags-optimized.webp',
+            heroImage: '/harrar.jpg',
             scaScore: 88,
             processColor: '#D97706',
             tasteProfile: [
@@ -406,6 +406,98 @@ export default function ProductsSection() {
                     ))}
                 </div>
             </div>
+
+            {/* ── Comprehensive Export Grades Banner ── */}
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="max-w-5xl mx-auto px-4 mt-24 mb-10"
+            >
+                <div className="relative p-10 md:p-14 rounded-xl border border-[#8B5E34]/30 bg-[#F7F3EE] shadow-2xl overflow-hidden text-center group">
+                    
+                    {/* Background Highlight: The Bag */}
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-[0.04] pointer-events-none">
+                        <Image
+                            src="/ygf-bags-optimized.webp"
+                            alt="YGF Coffee Bag Background"
+                            fill
+                            className="object-contain scale-150 grayscale sepia brightness-50"
+                        />
+                    </div>
+
+                    {/* Subtle paper/sack texture overlay */}
+                    <div className="absolute inset-0 opacity-[0.05] mix-blend-multiply" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'100\' height=\'100\' viewBox=\'0 0 100 100\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.8\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100\' height=\'100\' filter=\'url(%23noise)\'/%3E%3C/svg%3E")' }} />
+
+                    {/* Top Pattern Border - More Brownish */}
+                    <div className="absolute top-0 left-0 w-full h-3 flex opacity-50">
+                        {[...Array(20)].map((_, i) => (
+                            <div key={i} className="flex-1 flex border-b border-r border-[#8B5E34]/30">
+                                <div className="w-1/2 h-full bg-[#5C3A21]/20"></div>
+                                <div className="w-1/2 h-full bg-[#D97706]/10"></div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Bottom Pattern Border */}
+                    <div className="absolute bottom-0 left-0 w-full h-3 flex opacity-50 rotate-180">
+                        {[...Array(20)].map((_, i) => (
+                            <div key={i} className="flex-1 flex border-b border-r border-[#8B5E34]/30">
+                                <div className="w-1/2 h-full bg-[#5C3A21]/20"></div>
+                                <div className="w-1/2 h-full bg-[#D97706]/10"></div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Rich Coffee Brown Glows */}
+                    <div className="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-[#8B5E34]/[0.1] rounded-full blur-3xl transition-transform duration-1000 group-hover:scale-110" />
+                    <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 bg-[#5C3A21]/[0.08] rounded-full blur-3xl transition-transform duration-1000 group-hover:scale-110" />
+                    
+                    <div className="relative z-10">
+                        {/* Cultural Icon (Coffee Bean style) */}
+                        <div className="mx-auto mb-6 flex justify-center opacity-80">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#8B5E34" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M12 2c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10z" />
+                                <path d="M12 2c0 10 0 10 0 20" />
+                                <path d="M2.5 10.5c5 0 5 3 10 3s5-3 10-3" />
+                            </svg>
+                        </div>
+
+                        <span className="text-[#8B5E34] text-[10px] uppercase tracking-[0.35em] font-bold mb-4 block">
+                            Full Export Capabilities
+                        </span>
+                        
+                        <h4 className="text-3xl md:text-4xl font-[family:var(--font-vintage)] italic text-[#3E2723] mb-6">
+                            Comprehensive Grade Range
+                        </h4>
+                        
+                        <div className="w-12 h-px bg-[#8B5E34]/40 mx-auto mb-6" />
+
+                        <p className="text-[#5D4037] text-base md:text-lg font-light leading-relaxed max-w-3xl mx-auto">
+                            While we highlight our SCA 90+ micro-lots above, YGF Global Coffee Collective provides a reliable supply of <strong className="text-[#3E2723] font-semibold border-b border-[#8B5E34]/40 pb-0.5">Grades 1 through 4 (Washed & Natural)</strong> across all major Ethiopian regions. We cater to wholesale partners requiring high-volume commercial lots without compromising on traceability and origin integrity.
+                        </p>
+                        
+                        {/* Quick Specs List - More Brownish */}
+                        <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 mt-10 text-[11px] uppercase tracking-widest font-bold text-[#5D4037]">
+                            <div className="flex items-center gap-2.5">
+                                <div className="w-2.5 h-2.5 rounded-full border border-[#8B5E34]/50 bg-[#8B5E34]/20" />
+                                <span>Grade 1 & 2 Specialty</span>
+                            </div>
+                            <div className="hidden md:block w-px h-4 bg-[#8B5E34]/20" />
+                            <div className="flex items-center gap-2.5">
+                                <div className="w-2.5 h-2.5 rounded-full border border-[#8B5E34]/50 bg-[#5C3A21]/20" />
+                                <span>Grade 3 & 4 Commercial</span>
+                            </div>
+                            <div className="hidden md:block w-px h-4 bg-[#8B5E34]/20" />
+                            <div className="flex items-center gap-2.5">
+                                <div className="w-2.5 h-2.5 rounded-full border border-[#8B5E34]/50 bg-[#D97706]/10" />
+                                <span>Washed & Natural Process</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </motion.div>
         </section>
     );
 }

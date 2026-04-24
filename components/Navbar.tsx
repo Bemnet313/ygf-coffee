@@ -23,7 +23,7 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { nameKey: 'NAV_HOME', href: '/' },
+        { nameKey: 'NAV_HOME', href: '/#hero' },
         { nameKey: 'NAV_ABOUT', href: '/#about' },
         { nameKey: 'NAV_ORIGINS', href: '/#origins' },
         { nameKey: 'NAV_CEREMONY', href: '/#ceremony' },
@@ -41,7 +41,7 @@ const Navbar = () => {
             >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
                     <div className="flex items-center space-x-4 md:space-x-8">
-                        <Link href="/" className="flex flex-row items-center gap-3 cursor-pointer group">
+                        <Link href="/#hero" className="flex flex-row items-center gap-2 cursor-pointer group">
                             <div className="relative w-10 h-10 md:w-11 md:h-11 overflow-hidden rounded-full border border-primary/20 shadow-sm group-hover:border-primary/50 transition-colors bg-white flex-shrink-0">
                                 <Image
                                     src="/logo-nav.jpeg"
@@ -51,20 +51,14 @@ const Navbar = () => {
                                     priority
                                 />
                             </div>
-                            <div className="relative h-10 w-[140px] md:h-12 md:w-[160px]">
-                                <Image
-                                    src="/nav-text-logo.png"
-                                    alt="YGF Global Coffee Collective"
-                                    fill
-                                    className="object-contain object-left"
-                                    priority
-                                />
+                            <div className="flex flex-col text-[#1B4332] ml-1 pt-1 items-center">
+                                <span className="font-[family:var(--font-bodoni)] text-3xl md:text-[42px] leading-[0.8] font-black tracking-tight pb-[2px]">YGF</span>
+                                <div className="h-[1.5px] w-full bg-[#1B4332] my-[4px]"></div>
+                                <span className="font-sans text-[8px] md:text-[9.5px] font-bold tracking-[0.18em] leading-none uppercase">
+                                    Global Coffee Collective
+                                </span>
                             </div>
                         </Link>
-
-                        <div className="hidden sm:block">
-                            <LanguageToggle />
-                        </div>
                     </div>
 
                     {/* Desktop Menu */}
@@ -81,32 +75,33 @@ const Navbar = () => {
                             </Link>
                         ))}
 
-                        {/* Sticky "Request Sample" CTA Button */}
-                        <AnimatePresence>
-                            {scrolled && (
-                                <motion.div
-                                    initial={{ opacity: 0, x: 20 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    exit={{ opacity: 0, x: 20 }}
-                                    transition={{ duration: 0.4, ease: 'easeOut' }}
-                                >
-                                    <Link href="/#contact">
-                                        <MagneticButton>
-                                            <button className="min-h-[44px] min-w-[44px] px-6 py-2 bg-primary text-white font-serif uppercase tracking-[0.15em] text-[11px] font-bold hover:bg-primary/90 transition-colors duration-500 shadow-[0_0_20px_rgba(6,78,59,0.15)] hover:shadow-[0_0_30px_rgba(6,78,59,0.3)] border border-primary/20">
-                                                {t('PRODUCT_SAMPLE') || 'Request Sample'}
-                                            </button>
-                                        </MagneticButton>
-                                    </Link>
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
+                        <div className="flex items-center space-x-6">
+                            {/* Sticky "Request Sample" CTA Button */}
+                            <AnimatePresence>
+                                {scrolled && (
+                                    <motion.div
+                                        initial={{ opacity: 0, x: 20 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        exit={{ opacity: 0, x: 20 }}
+                                        transition={{ duration: 0.4, ease: 'easeOut' }}
+                                    >
+                                        <Link href="/#contact">
+                                            <MagneticButton>
+                                                <button className="min-h-[44px] min-w-[44px] px-6 py-2 bg-primary text-white font-serif uppercase tracking-[0.15em] text-[11px] font-bold hover:bg-primary/90 transition-colors duration-500 shadow-[0_0_20px_rgba(6,78,59,0.15)] hover:shadow-[0_0_30px_rgba(6,78,59,0.3)] border border-primary/20">
+                                                    {t('PRODUCT_SAMPLE') || 'Request Sample'}
+                                                </button>
+                                            </MagneticButton>
+                                        </Link>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                            <LanguageToggle />
+                        </div>
                     </div>
 
                     {/* Mobile Controls */}
                     <div className="flex items-center space-x-4 md:hidden">
-                        <div className="sm:hidden">
-                            <LanguageToggle />
-                        </div>
+                        <LanguageToggle />
                         <button
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                             className="min-h-[44px] min-w-[44px] flex items-center justify-center text-heading hover:text-primary transition-colors duration-300 focus:outline-none"

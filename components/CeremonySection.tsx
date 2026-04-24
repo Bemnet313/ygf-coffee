@@ -25,7 +25,7 @@ const CeremonySection = () => {
                             alt="Ethiopian Coffee Ceremony"
                             fill
                             sizes="(max-width: 768px) 100vw, 50vw"
-                            className="object-cover object-top transition-transform duration-1000 group-hover:scale-105"
+                            className="object-cover object-[center_85%] transition-transform duration-1000 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
                         <div className="absolute bottom-6 left-8 right-8 text-white/90">
