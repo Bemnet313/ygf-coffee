@@ -20,10 +20,10 @@ export default function AboutSection() {
                         <span className="text-[#2D6A4F] font-[family:var(--font-vintage)] italic tracking-widest">{t('ABOUT_HERITAGE')}</span> &<br />{t('ABOUT_EXCELLENCE')}
                     </h3>
                     <p className="text-[#4A4A4A] text-lg font-light leading-loose mb-6 tracking-wide">
-                        YGF is a family-run Ethiopian coffee export business, built on <span className="text-[#2D6A4F] font-medium">three generations</span> of knowledge and care. The name comes from our roots — <span className="text-[#2D6A4F] font-medium">Y</span> for <span className="text-[#2D6A4F] font-medium">Yishak</span>, <span className="text-[#2D6A4F] font-medium">Yacob</span>, and <span className="text-[#2D6A4F] font-medium">Yoseph</span>, <span className="text-[#2D6A4F] font-medium">G</span> for their father <span className="text-[#2D6A4F] font-medium">Girum</span>, and <span className="text-[#2D6A4F] font-medium">F</span> for their mother <span className="text-[#2D6A4F] font-medium">Faith</span>. Together, the <span className="text-[#2D6A4F] font-medium">Baleme family</span> brings Ethiopian specialty coffee to the world from our base in <span className="text-[#2D6A4F] font-medium">Addis Ababa</span>.
+                        {t('ABOUT_P1')}
                     </p>
                     <p className="text-[#4A4A4A] text-lg font-light leading-loose tracking-wide">
-                        We source <span className="text-[#2D6A4F] font-medium">Grade 1 through 5</span> green coffee from Ethiopia&apos;s most celebrated regions — <span className="text-[#2D6A4F] font-medium">Yirgacheffe</span>, <span className="text-[#2D6A4F] font-medium">Sidamo</span>, <span className="text-[#2D6A4F] font-medium">Guji</span>, <span className="text-[#2D6A4F] font-medium">Jimma</span>, <span className="text-[#2D6A4F] font-medium">Limu</span>, and <span className="text-[#2D6A4F] font-medium">Harrar</span>. Every lot is hand-selected, carefully processed, and traceable from farm to port. We are here to build lasting partnerships with roasters and importers who value quality, transparency, and a direct line to origin.
+                        {t('ABOUT_P2')}
                     </p>
                 </motion.div>
 

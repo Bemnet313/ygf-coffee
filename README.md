@@ -1,8 +1,8 @@
-# Tilla Coffee Export
+# YGF Global Coffee Collective
 
-**Live Demo:** [View on Vercel](https://tilla-coffee.vercel.app/)
+**Live Demo:** [View on Netlify](https://ygfcoffee.netlify.app/)
 
-Tilla Coffee Export is a premium destination showcasing the finest Ethiopian specialty coffee (from Yirgacheffe, Sidamo, Guji, and Harrar) to the world's best roasters. We deliver a deeply immersive, story-driven digital experience to celebrate Ethiopian coffee culture through our luxurious aesthetic. Visitors can explore our origins, learn about our washing and processing stations, interact with 3D product representations, and easily submit wholesale inquiries.
+YGF Global Coffee Collective is a family-run Ethiopian coffee export business based in Addis Ababa. We source and export the finest Ethiopian specialty coffee (from Yirgacheffe, Sidamo, Guji, Jimma, Limu, and Harrar) to the world's best roasters. We deliver a deeply immersive, story-driven digital experience to celebrate Ethiopian coffee culture through our luxurious aesthetic. Visitors can explore our origins, learn about our washing and processing stations, interact with 3D product representations, and easily submit wholesale inquiries.
 
 ## Key Features
 

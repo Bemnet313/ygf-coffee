@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "YGF Global Coffee Collective",
   ],
   authors: [{ name: "YGF Global Coffee Collective" }],
-  metadataBase: new URL("https://ygf-coffee.vercel.app"),
+  metadataBase: new URL("https://ygfcoffee.netlify.app"),
   openGraph: {
     title: "YGF Global Coffee Collective — Premium Ethiopian Specialty Coffee",
     description:
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "YGF Global Coffee Collective",
-    url: "https://ygf-coffee.vercel.app",
+    url: "https://ygfcoffee.netlify.app",
     images: [
       {
         url: "/og-image.png",
