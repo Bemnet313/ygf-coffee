@@ -42,7 +42,7 @@ const Navbar = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
                     <div className="flex items-center space-x-4 md:space-x-8">
                         <Link href="/" className="flex flex-row items-center gap-3 cursor-pointer group">
-                            <div className="relative w-10 h-10 md:w-11 md:h-11 overflow-hidden rounded-full border border-primary/20 shadow-sm group-hover:border-primary/50 transition-colors bg-white">
+                            <div className="relative w-10 h-10 md:w-11 md:h-11 overflow-hidden rounded-full border border-primary/20 shadow-sm group-hover:border-primary/50 transition-colors bg-white flex-shrink-0">
                                 <Image
                                     src="/logo-nav.jpeg"
                                     alt="YGF Coffee Icon"
@@ -51,12 +51,14 @@ const Navbar = () => {
                                     priority
                                 />
                             </div>
-                            <div className="flex flex-col text-[#1B4332]">
-                                <span className="font-[family:var(--font-bodoni)] text-2xl md:text-[28px] leading-none font-bold tracking-wider">YGF</span>
-                                <div className="h-[1px] w-full bg-[#1B4332]/40 my-[3px]"></div>
-                                <span className="font-sans text-[0.5rem] md:text-[10px] font-bold tracking-[0.15em] leading-none uppercase">
-                                    Global Coffee Collective
-                                </span>
+                            <div className="relative h-10 w-[140px] md:h-12 md:w-[160px]">
+                                <Image
+                                    src="/nav-text-logo.png"
+                                    alt="YGF Global Coffee Collective"
+                                    fill
+                                    className="object-contain object-left"
+                                    priority
+                                />
                             </div>
                         </Link>
 
