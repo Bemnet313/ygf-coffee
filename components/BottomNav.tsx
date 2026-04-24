@@ -1,7 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/context/LanguageContext";
-import { Coffee, Map, PhoneCall, ShoppingBag } from "lucide-react";
+import { Coffee, Map, PhoneCall, ShoppingBag, Info } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function BottomNav() {
@@ -9,6 +9,7 @@ export default function BottomNav() {
 
     const navItems = [
         { icon: Coffee, label: t("NAV_HOME"), href: "#hero" },
+        { icon: Info, label: t("NAV_ABOUT"), href: "#about" },
         { icon: Map, label: t("NAV_ORIGINS"), href: "#origins" },
         { icon: ShoppingBag, label: t("NAV_PRODUCTS"), href: "#products" },
         { icon: PhoneCall, label: t("NAV_CONTACT"), href: "#contact" }

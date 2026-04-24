@@ -91,7 +91,7 @@ export default function SourcingMapSection() {
     const [activeRegion, setActiveRegion] = useState<CoffeeRegion | null>(null);
 
     return (
-        <section className="relative w-full py-16 md:py-24 lg:py-32 bg-[#FAF8F4] border-t border-stone-200 overflow-hidden">
+        <section id="origins" className="relative w-full py-16 md:py-24 lg:py-32 bg-[#FAF8F4] border-t border-stone-200 overflow-hidden">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Section Header */}

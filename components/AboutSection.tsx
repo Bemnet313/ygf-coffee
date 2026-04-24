@@ -6,7 +6,7 @@ import { useLanguage } from '@/context/LanguageContext';
 export default function AboutSection() {
     const { t } = useLanguage();
     return (
-        <section id="origins" className="min-h-screen w-full flex items-center justify-center py-16 md:py-32 px-6 border-b border-[#E5E0D8] relative bg-[#F5F2EC] z-10">
+        <section id="about" className="min-h-screen w-full flex items-center justify-center py-16 md:py-32 px-6 border-b border-[#E5E0D8] relative bg-[#F5F2EC] z-10">
             <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
                 <motion.div

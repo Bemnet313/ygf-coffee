@@ -24,6 +24,7 @@ const Navbar = () => {
 
     const navLinks = [
         { nameKey: 'NAV_HOME', href: '/' },
+        { nameKey: 'NAV_ABOUT', href: '/#about' },
         { nameKey: 'NAV_ORIGINS', href: '/#origins' },
         { nameKey: 'NAV_CEREMONY', href: '/#ceremony' },
         { nameKey: 'NAV_PRODUCTS', href: '/#products' },
